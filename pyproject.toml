@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "rglob"
+version = "0.1.0"
+description = ""
+authors = ["Arno's Stuff <bcda0276@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+typer = "^0.7.0"
+numpy = "^1.24.2"
+brotli = "^1.0.9"
+rich = "^13.3.2"
+
+[tool.poetry.scripts]
+rglob = "rglob.cli:run"
+
+[tool.poetry.group.dev.dependencies]
+typer-cli = "^0.0.13"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
